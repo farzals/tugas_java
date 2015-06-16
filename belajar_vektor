@@ -1,0 +1,30 @@
+import java.util.Scanner;
+import java.util.Vector;
+public class belajar_vektor {
+    public static void main (String[]args){
+        Scanner in = new Scanner(System.in);
+        Vector<String> Nim = new Vector();
+        Vector<String> Nama = new Vector();
+        Vector<String> Alamat = new Vector();
+        
+        String inputNama = "";
+        String inputNim = "";
+        String inputAlamat = "";
+        //input data
+        for (int i=0;i<2;i++){
+            System.out.print("Nim : ");
+            inputNim = in.next();
+            System.out.print("Nama : ");
+            inputNama = in.next();
+            System.out.print("Alamat : ");
+            inputAlamat = in.next();
+            //menambah vektor
+            Nim.add(inputNim);
+            Nama.add(inputNama);
+            Alamat.add(inputAlamat);
+         }
+        System.out.println(Nim);
+        System.out.println(Nama);
+        System.out.println(Alamat);
+    }
+}
